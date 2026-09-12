@@ -9,16 +9,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
-@media screen {
+@media only screen and (max-width: 768px) {
     body {
-    margin: 0;
-    min-height: 100vh; /* Changé de 100% à 100vh pour assurer le centrage vertical complet */
     background-color: #d7980b;
-    color-scheme: light;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
     }
 }
 
