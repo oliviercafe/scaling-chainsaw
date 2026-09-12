@@ -3,28 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro Video</title>
+    <title>Miziko Top</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs..5.2/css/all.min.css
+
     <style>
         body {
             margin: 0;
-            height: 100vh;
+            min-height: 100vh;
             background-color: #d7980b;
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
         }
 
         video {
             max-width: 90vw;
-            max-height: 90vh;
+            max-height: 80vh;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .instagram-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: white;
+            font-size: 40px;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+
+        .instagram-link:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
 <body>
-    <video autoplay muted playsinline>
-        intro.mp4
-        Your browser does not support the video tag.
-    </video>
+
+    <div class="container">
+
+        <video autoplay muted loop playsinline>
+            intro.mp4
+            Your browser does not support the video tag.
+        </video>
+
+        <a
+            class="instagram-link"
+            href="https://instagram.com/mizikotop"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+
+    </div>
+
 </body>
 </html>
