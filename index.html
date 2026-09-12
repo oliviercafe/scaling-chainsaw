@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>MIZIKOTOP</title>
     <style>
         body {
@@ -42,27 +42,12 @@
     </style>
 </head>
 <body>
-
     <div class="container">
-
-        <video autoplay loop muted>
+        <video autoplay loop muted control>
           <source src="intro3.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
-        <button id="muteBtn">Unmute</button>
-
-    <a href="https://instagram.com" target="_blank" style="color: white; font-size: 24px; text-decoration: none;">
-      <i class="fa-brands fa-instagram"></i>
-    </a>
+        <i class="fa fa-instagram" style="font-size:48px;color:white"></i>
     </div>
-<script>
-  const video = document.getElementById("myVideo");
-  const muteBtn = document.getElementById("muteBtn");
-
-  muteBtn.addEventListener("click", function() {
-    video.muted = !video.muted;
-    muteBtn.textContent = video.muted ? "Unmute" : "Mute";
-  });
-</script>
 </body>
 </html>
