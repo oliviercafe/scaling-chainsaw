@@ -26,24 +26,11 @@
             display: block;
             margin: 0 auto;
         }
-
-        .instagram-link {
-            display: inline-block;
-            margin-top: 20px;
-            color: white;
-            font-size: 40px;
-            text-decoration: none;
-            transition: transform 0.2s ease;
-        }
-
-        .instagram-link:hover {
-            transform: scale(1.1);
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <i class="fa fa-instagram" style="font-size:48px;color:white" href="https://instagram.com/mizikotop" target="_blank"></i>
+        <a href="https://instagram.com/mizikotop" target="_blank"><i class="fa fa-instagram" style="font-size:48px;color:white"></i></a>
         <video id="intro" autoplay loop muted controls playsinline>
           <source src="intro3.mp4" type="video/mp4">
           Your browser does not support the video tag.
@@ -55,7 +42,7 @@
 
     <script>
         function toggleMute() {
-            const video = document.getElementById('promoVideo');
+            const video = document.getElementById('intro');
             const btn = document.getElementById('muteBtn');
             video.muted = !video.muted;
             btn.textContent = video.muted ? 'Unmute' : 'Mute';
